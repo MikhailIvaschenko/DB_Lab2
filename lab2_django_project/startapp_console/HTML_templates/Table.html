@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        {% for form in Formset.forms %}
+            {% if forloop.first %}
+                {% for field in form %}
+                    <th>{{ field.label_tag }}</th>
+                {% endfor %}
+            {% endif %}
+    </thead>
+    <tbody>
+            <tr>
+                <form action="MTOperationsButtonPressed/" method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <td>{{ field }}</td>
+                    {% endfor %}
+                    <td><input type="submit" name="edit{{ forloop.counter0 }}" value="edit" /></td>
+                    <td><input type="submit" name="delete{{ forloop.counter0 }}" value="delete" /></td>
+            <tr>
+        {% endfor %}
+            <tr>
+                <td><input type="submit" name="add" value="add" /></td>
+                <td><input type="submit" name="search" value="search"></td>
+            </tr>
+    </tbody>
+</table>

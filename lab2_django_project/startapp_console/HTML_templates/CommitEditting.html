@@ -1,0 +1,22 @@
+<div style="position:fixed;top:0;left:0;width:100%;margin:0 auto;">
+    <h1>Edit operations</h1>
+</div>
+
+<div style="margin:40px auto;width: 800px;line-height: 40px;">
+    <br>
+    <table>
+        <form action="CommitEditting/" method="post" >
+            <tr>
+                <td>
+                    {% csrf_token %}
+                    {{ form }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Confirm" />
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>

@@ -1,0 +1,142 @@
+<table width="400px">
+    <tr>
+        <td>
+            <h2>
+                Accounts
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <form action="ACTDateSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form0 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <form action="ACTCurrencySearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form1 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+
+    <tr>
+        <td>
+            <h2>
+                BRD
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <form action="BRDTPriceFilter/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form2 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <form action="BRDTOrgSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form3 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+
+    <tr>
+        <td>
+            <h2>
+                Counteragents
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <form action="CATCodeSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form4 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <form action="CATSchemeSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form5 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+
+    <tr>
+        <td>
+            <h2>
+                Nomenclatures
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <form action="NOMTMUSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form6 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <form action="NOMTFTPhraseSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form7 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <form action="NOMTFTWordSearch/" method="post" >
+            <td >
+                {% csrf_token %}
+                {{ form8 }}
+            </td>
+            <td align="right">
+                <input type="submit" name="search" value="search">
+            </td>
+        </form>
+    </tr>
+
+
+    <tr>
+        <form action="STComeBack/" method="post" >
+            {% csrf_token %}
+            <td width="400">
+                <input type="submit" name="back" value="back">
+            </td>
+        </form>
+    </tr>
+</table>

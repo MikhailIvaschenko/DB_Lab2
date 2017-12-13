@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+   <dataset>
+    <row>
+     <nomName>nom1</nomName>
+     <nomVendore_code>128376</nomVendore_code>
+     <nomMU>tones</nomMU>
+     <nomVAT_rate>36</nomVAT_rate>
+     <nomUKTZED_code>1237364</nomUKTZED_code>
+     <nomStock_type>type1</nomStock_type>
+     <Description>First description. Nomenclature1. qwerty</Description>
+    </row>
+    <row>
+     <nomName>nom2</nomName>
+     <nomVendore_code>nomcode2123</nomVendore_code>
+     <nomMU>kg</nomMU>
+     <nomVAT_rate>12</nomVAT_rate>
+     <nomUKTZED_code>178635</nomUKTZED_code>
+     <nomStock_type>type2</nomStock_type>
+     <Description>Second description. Nomenclature2. qwerty1</Description>
+    </row>
+    <row>
+     <nomName>nom3</nomName>
+     <nomVendore_code>nomcode3123</nomVendore_code>
+     <nomMU>m</nomMU>
+     <nomVAT_rate>7</nomVAT_rate>
+     <nomUKTZED_code>87642123</nomUKTZED_code>
+     <nomStock_type>type1</nomStock_type>
+     <Description>Third description. Nomenclature2. qwerty</Description>
+    </row>
+   </dataset>
